@@ -2,8 +2,13 @@
     <section class="container-discs">
          <div class="discs">
             <div class="disc" v-for="item in albums" :key="item.poster">
-             <img :src="item.poster" alt="">
-             <p>{{ item.title }}</p>
+                <img :src="item.poster" alt="">
+                <h3>{{item.title}}</h3>
+                <div class="text-disc"> 
+                    
+                    <p>{{item.author}}</p>
+                    <p>{{item.year}}</p>
+                </div>
             </div>
           
          </div>
@@ -36,7 +41,7 @@ created(){
 
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 
 .discs{
         width: 1200px;
@@ -55,6 +60,12 @@ created(){
     height: 350px;
     background-color: hsl(210deg 21% 23%);
     margin: 10px 10px;
+    text-align: center
+}
+h3{
+    color: white;
+    padding-top: 10px;
+    text-transform: uppercase;
 }
 img{
     width: 184px;
@@ -62,6 +73,10 @@ img{
     margin-left: 16px;
     margin-right: 16px;
     margin-top: 10px;
+}
+.text-disc{
+    padding-top: 50px;
+    color: gray;
 }
 </style>
 
