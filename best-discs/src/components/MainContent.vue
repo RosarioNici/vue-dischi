@@ -28,7 +28,7 @@ created(){
         if (response.status === 200) {
           console.log('ok')
           const albumsAPI = response.data.response
-          this.albums.push(albumsAPI)
+          this.albums = albumsAPI
           console.log(this.albums)
         }
                         })},
@@ -55,6 +55,13 @@ created(){
     height: 350px;
     background-color: hsl(210deg 21% 23%);
     margin: 10px 10px;
+}
+img{
+    width: 184px;
+    height: 184px;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 10px;
 }
 </style>
 

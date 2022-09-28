@@ -1,7 +1,8 @@
 <template>
   <div id="app">
          <HeaderContent/>
-         <MainContent />
+         <MainContent 
+         />
   </div>
 </template>
 
